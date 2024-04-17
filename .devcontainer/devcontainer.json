@@ -1,0 +1,17 @@
+{
+    "name": "Java & Maven",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "vscjava.vscode-java-pack"
+    ],
+    "forwardPorts": [
+        8080
+    ],
+    "postCreateCommand": "mvn install -DskipTests",
+    "remoteUser": "root"
+}
